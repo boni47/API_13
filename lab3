@@ -1,0 +1,480 @@
+Windows PowerShell
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Попробуйте новую кроссплатформенную оболочку PowerShell (https://aka.ms/pscore6)
+
+PS C:\Users\Женя\Desktop> Invoke-RestMethod -Uri "https://api.kinopoisk.dev/v1/movie/1020" -Headers @{ "X-API-KEY" = "ZNCAXCY-N0FMR5B-N23G774-91NSM0B" }
+
+
+status              :
+externalId          : @{imdb=tt0028486; tmdb=81117; kpHD=}
+rating              : @{kp=6,582; imdb=6,2; filmCritics=0; russianFilmCriti
+                      cs=0; await=}
+votes               : @{kp=151; imdb=741; filmCritics=0; russianFilmCritics
+                      =0; await=0}
+backdrop            : @{url=; previewUrl=}
+movieLength         : 81
+images              : @{framesCount=0}
+productionCompanies : {@{name=Paramount; url=https://www.themoviedb.org/t/p
+                      /original/fycMZt242LVjagMByZOLUGbCvv3.png; previewUrl
+                      =https://www.themoviedb.org/t/p/w500/fycMZt242LVjagMB
+                      yZOLUGbCvv3.png}}
+spokenLanguages     : {@{name=English; nameEn=English}}
+id                  : 1020
+type                : movie
+name                : Свадебный подарок
+description         : Он и она молодые журналисты, работающие в «Глоуб Эксп
+                      рэсс». Эксцентричный характер обоих мешает им довести
+                       свои отношения до свадьбы. После нескольких необдума
+                      нных поступков девушка даже решает выйти замуж за дру
+                      гого, но необычный свадебный подарок, который делает
+                      ей бывший возлюбленный, окончательно покоряет ее серд
+                      це...
+distributors        : @{distributor=; distributorRelease=Светла}
+premiere            : @{world=1936-10-09T00:00:00.000Z; dvd=2010-04-05T00:0
+                      0:00.000Z; bluray=; cinema=; digital=; russia=}
+slogan              : We're almost married . . . and we want to stay that w
+                      ay !
+year                : 1936
+poster              : @{url=https://image.openmoviedb.com/kinopoisk-images/
+                      1704946/f8d22a98-9a43-4418-8a42-ea35fa1c1225/orig; pr
+                      eviewUrl=https://image.openmoviedb.com/kinopoisk-imag
+                      es/1704946/f8d22a98-9a43-4418-8a42-ea35fa1c1225/x1000
+                      }
+facts               :
+genres              : {@{name=мелодрама}, @{name=комедия}}
+countries           : {@{name=США}}
+seasonsInfo         :
+persons             : {@{id=177573; photo=https://st.kp.yandex.net/images/a
+                      ctor_iphone/iphone360_177573.jpg; name=Джоан Беннетт;
+                       enName=Joan Bennett; description=Monica 'Rusty' Flem
+                      ing; profession=актеры; enProfession=actor}, @{id=154
+                      ne/iphone360_154898.jpg; name=Кэри Грант; enName=Cary
+                       Grant; description=Charlie Mason; profession=актеры;
+                       enProfession=actor}, @{id=215273; photo=https://st.k
+                      p.yandex.net/images/actor_iphone/iphone360_215273.jpg
+                      ; name=Джордж Бэнкрофт; enName=George Bancroft; descr
+                      iption=Pete Stagg; profession=актеры; enProfession=ac
+                      tor}, @{id=205559; photo=https://st.kp.yandex.net/ima
+                      ges/actor_iphone/iphone360_205559.jpg; name=Конрад Нэ
+                      йджел; enName=Conrad Nagel; description=Roger Dodacke
+                      r; profession=актеры; enProfession=actor}...}
+lists               : {}
+typeNumber          : 1
+alternativeName     : Wedding Present
+enName              :
+names               : {@{name=Свадебный подарок}, @{name=Wedding Present},
+                      @{name=Bonne Blague; language=FR; type=}}
+ageRating           : 12
+budget              :
+ratingMpaa          : pg13
+shortDescription    :
+technology          : @{hasImax=False; has3D=False}
+ticketsOnSale       : False
+updatedAt           : 2024-07-09T05:10:27.859Z
+similarMovies       : {}
+sequelsAndPrequels  : {}
+fees                : @{world=; russia=; usa=}
+logo                : @{url=}
+watchability        : @{items=System.Object[]}
+top10               :
+top250              :
+deletedAt           :
+isSeries            : False
+seriesLength        :
+totalSeriesLength   :
+networks            :
+videos              : @{trailers=System.Object[]}
+
+
+
+v1/movie/possible-values-by-field?field=genres.name" -Headers @{ "X-API-KEY" = "ZNCAXCY-N0FMR5B-N23G774-91NSM0B" }
+
+name            slug
+----            ----
+аниме           anime
+биография       biografiya
+боевик          boevik
+вестерн         vestern
+военный         voennyy
+детектив        detektiv
+детский         detskiy
+для взрослых    dlya-vzroslyh
+документальный  dokumentalnyy
+драма           drama
+игра            igra
+история         istoriya
+комедия         komediya
+концерт         koncert
+короткометражка korotkometrazhka
+криминал        kriminal
+мелодрама       melodrama
+музыка          muzyka
+мультфильм      multfilm
+мюзикл          myuzikl
+новости         novosti
+приключения     priklyucheniya
+реальное ТВ     realnoe-TV
+семейный        semeynyy
+спорт           sport
+ток-шоу         tok-shou
+триллер         triller
+ужасы           uzhasy
+фантастика      fantastika
+фильм-нуар      film-nuar
+фэнтези         fentezi
+церемония       ceremoniya
+
+
+PS C:\Users\Женя\Desktop> Invoke-RestMethod -Uri "https://api.kinopoisk.dev/v1/movie/possible-values-by-field?field=countries.name" -Headers @{ "X-API-KEY" = "ZNCAXCY-N0FMR5B-N23G774-91NSM0B" }
+
+name                                   slug
+----                                   ----
+Австралия                              Avstraliya
+Австрия                                Avstriya
+Азербайджан                            Azerbaydzhan
+Албания                                Albaniya
+Алжир                                  Alzhir
+Американские Виргинские острова        Amerikanskie-Virginskie-ostrova
+Американское Самоа                     Amerikanskoe-Samoa
+Ангола                                 Angola
+Андорра                                Andorra
+Антарктида                             Antarktida
+Антигуа и Барбуда                      Antigua-i-Barbuda
+Антильские Острова                     Antilskie-Ostrova
+Аргентина                              Argentina
+Армения                                Armeniya
+Аруба                                  Aruba
+Афганистан                             Afganistan
+Багамы                                 Bagamy
+Бангладеш                              Bangladesh
+Барбадос                               Barbados
+Бахрейн                                Bahreyn
+Беларусь                               Belarus
+Белиз                                  Beliz
+Бельгия                                Belgiya
+Бенин                                  Benin
+Берег Слоновой кости                   Bereg-Slonovoy-kosti
+Бермуды                                Bermudy
+Бирма                                  Birma
+Болгария                               Bolgariya
+Боливия                                Boliviya
+Босния                                 Bosniya
+Босния и Герцеговина                   Bosniya-i-Gercegovina
+Ботсвана                               Botsvana
+Бразилия                               Braziliya
+Бруней-Даруссалам                      Bruney-Darussalam
+Буркина-Фасо                           Burkina-Faso
+Бурунди                                Burundi
+Бутан                                  Butan
+Вануату                                Vanuatu
+Ватикан                                Vatikan
+Великобритания                         Velikobritaniya
+Венгрия                                Vengriya
+Венесуэла                              Venesuela
+Виргинские Острова                     Virginskie-Ostrova
+Внешние малые острова США              Vneshnie-malye-ostrova-SShA
+Вьетнам                                Vetnam
+Вьетнам Северный                       Vetnam-Severnyy
+Габон                                  Gabon
+Гаити                                  Gaiti
+Гайана                                 Gayana
+Гамбия                                 Gambiya
+Гана                                   Gana
+Гваделупа                              Gvadelupa
+Гватемала                              Gvatemala
+Гвинея                                 Gvineya
+Гвинея-Бисау                           Gvineya-Bisau
+Германия                               Germaniya
+Германия (ГДР)                         Germaniya-(GDR)
+Германия (ФРГ)                         Germaniya-(FRG)
+Гибралтар                              Gibraltar
+Гондурас                               Gonduras
+Гонконг                                Gonkong
+Гренада                                Grenada
+Гренландия                             Grenlandiya
+Греция                                 Greciya
+Грузия                                 Gruziya
+Гуам                                   Guam
+Дания                                  Daniya
+Джибути                                Dzhibuti
+Доминика                               Dominika
+Доминикана                             Dominikana
+Египет                                 Egipet
+Заир                                   Zair
+Замбия                                 Zambiya
+Западная Сахара                        Zapadnaya-Sahara
+Зимбабве                               Zimbabve
+Израиль                                Izrail
+Индия                                  Indiya
+Индонезия                              Indoneziya
+Иордания                               Iordaniya
+Ирак                                   Irak
+Иран                                   Iran
+Ирландия                               Irlandiya
+Исландия                               Islandiya
+Испания                                Ispaniya
+Италия                                 Italiya
+Йемен                                  Yemen
+Кабо-Верде                             Kabo-Verde
+Казахстан                              Kazahstan
+Каймановы острова                      Kaymanovy-ostrova
+Камбоджа                               Kambodzha
+Камерун                                Kamerun
+Канада                                 Kanada
+Катар                                  Katar
+Кения                                  Keniya
+Кипр                                   Kipr
+Кирибати                               Kiribati
+Китай                                  Kitay
+Колумбия                               Kolumbiya
+Коморы                                 Komory
+Конго                                  Kongo
+Конго (ДРК)                            Kongo-(DRK)
+Корея                                  Koreya
+Корея Северная                         Koreya-Severnaya
+Корея Южная                            Koreya-Yuzhnaya
+Косово                                 Kosovo
+Коста-Рика                             Kosta-Rika
+Кот-д’Ивуар                            Kot-d'Ivuar
+Куба                                   Kuba
+Кувейт                                 Kuveyt
+Кыргызстан                             Kyrgyzstan
+Лаос                                   Laos
+Латвия                                 Latviya
+Лесото                                 Lesoto
+Либерия                                Liberiya
+Ливан                                  Livan
+Ливия                                  Liviya
+Литва                                  Litva
+Лихтенштейн                            Lihtenshteyn
+Люксембург                             Lyuksemburg
+Маврикий                               Mavrikiy
+Мавритания                             Mavritaniya
+Мадагаскар                             Madagaskar
+Макао                                  Makao
+Македония                              Makedoniya
+Малави                                 Malavi
+Малайзия                               Malayziya
+Мали                                   Mali
+Мальдивы                               Maldivy
+Мальта                                 Malta
+Марокко                                Marokko
+Мартиника                              Martinika
+Маршалловы острова                     Marshallovy-ostrova
+Мексика                                Meksika
+Мозамбик                               Mozambik
+Молдова                                Moldova
+Монако                                 Monako
+Монголия                               Mongoliya
+Монтсеррат                             Montserrat
+Мьянма                                 Myanma
+Намибия                                Namibiya
+Непал                                  Nepal
+Нигер                                  Niger
+Нигерия                                Nigeriya
+Нидерланды                             Niderlandy
+Никарагуа                              Nikaragua
+Новая Зеландия                         Novaya-Zelandiya
+Новая Каледония                        Novaya-Kaledoniya
+Норвегия                               Norvegiya
+ОАЭ                                    OAE
+Оккупированная Палестинская территория Okkupirovannaya-Palestinskaya-ter...
+Оман                                   Oman
+Остров Мэн                             Ostrov-Men
+Острова Кука                           Ostrova-Kuka
+Пакистан                               Pakistan
+Палау                                  Palau
+Палестина                              Palestina
+Панама                                 Panama
+Папуа - Новая Гвинея                   Papua---Novaya-Gvineya
+Парагвай                               Paragvay
+Перу                                   Peru
+Польша                                 Polsha
+Португалия                             Portugaliya
+Пуэрто Рико                            Puerto-Riko
+Реюньон                                Reyunon
+Российская империя                     Rossiyskaya-imperiya
+Россия                                 Rossiya
+Руанда                                 Ruanda
+Румыния                                Rumyniya
+СССР                                   SSSR
+США                                    SShA
+Сальвадор                              Salvador
+Самоа                                  Samoa
+Сан-Марино                             San-Marino
+Саудовская Аравия                      Saudovskaya-Araviya
+Свазиленд                              Svazilend
+Северная Македония                     Severnaya-Makedoniya
+Сейшельские острова                    Seyshelskie-ostrova
+Сенегал                                Senegal
+Сент-Винсент и Гренадины               Sent-Vinsent-i-Grenadiny
+Сент-Китс и Невис                      Sent-Kits-i-Nevis
+Сент-Люсия                             Sent-Lyusiya-
+Сербия                                 Serbiya
+Сербия и Черногория                    Serbiya-i-Chernogoriya
+Сиам                                   Siam
+Сингапур                               Singapur
+Сирия                                  Siriya
+Словакия                               Slovakiya
+Словения                               Sloveniya
+Соломоновы Острова                     Solomonovy-Ostrova
+Сомали                                 Somali
+Судан                                  Sudan
+Суринам                                Surinam
+Сьерра-Леоне                           Serra-Leone
+Таджикистан                            Tadzhikistan
+Таиланд                                Tailand
+Тайвань                                Tayvan
+Танзания                               Tanzaniya
+Тимор-Лесте                            Timor-Leste
+Того                                   Togo
+Тонга                                  Tonga
+Тринидад и Тобаго                      Trinidad-i-Tobago
+Тунис                                  Tunis
+Туркменистан                           Turkmenistan
+Турция                                 Turciya
+Уганда                                 Uganda
+Узбекистан                             Uzbekistan
+Украина                                Ukraina
+Уругвай                                Urugvay
+Фарерские острова                      Farerskie-ostrova
+Федеративные Штаты Микронезии          Federativnye-Shtaty-Mikronezii
+Фиджи                                  Fidzhi
+Филиппины                              Filippiny
+Франция                                Franciya
+Французская Гвиана                     Francuzskaya-Gviana
+Французская Полинезия                  Francuzskaya-Polineziya
+Хорватия                               Horvatiya
+ЦАР                                    CAR
+Чад                                    Chad
+Черногория                             Chernogoriya
+Чехия                                  Chehiya
+Чехословакия                           Chehoslovakiya
+Чили                                   Chili
+Швейцария                              Shveycariya
+Швеция                                 Shveciya
+Шри-Ланка                              Shri-Lanka
+Эквадор                                Ekvador
+Экваториальная Гвинея                  Ekvatorialnaya-Gvineya
+Эритрея                                Eritreya
+Эсватини                               Esvatini
+Эстония                                Estoniya
+Эфиопия                                Efiopiya
+ЮАР                                    YuAR
+Югославия                              Yugoslaviya
+Югославия (ФР)                         Yugoslaviya-(FR)
+Ямайка                                 Yamayka
+Япония                                 Yaponiya
+
+
+PS C:\Users\Женя\Desktop> Invoke-RestMethod -Uri "https://api.kinopoisk.dev/v1/movie/possible-values-by-field?field=status" -Headers @{ "X-API-KEY" = "ZNCAXCY-N0FMR5B-N23G774-91NSM0B" }
+
+name            slug
+----            ----
+announced       announced
+completed       completed
+filming         filming
+post-production post-production
+pre-production  pre-production
+
+
+PS C:\Users\Женя\Desktop> Invoke-RestMethod -Uri "https://api.kinopoisk.dev/v1/movie/random" -Headers @{ "X-API-KEY" = "ZNCAXCY-N0FMR5B-N23G774-91NSM0B" }
+
+id                  : 1348831
+type                : tv-series
+externalId          : @{kpHD=; imdb=tt11709206; tmdb=}
+name                : Чёрная лагуна: Вершины
+rating              : @{kp=6,278; imdb=6,5; filmCritics=0; russianFilmCriti
+                      cs=0; await=}
+description         : Школа-интернат для проблемных детей находится в горах
+                      , рядом со старым монастырем — в месте труднодоступно
+                      м и изолированном. А в окрестных лесах таится какая-т
+                      о древняя и опасная тайна.
+votes               : @{kp=1763; imdb=2406; filmCritics=0; russianFilmCriti
+                      cs=0; await=0}
+distributors        : @{distributor=; distributorRelease=}
+premiere            : @{world=2021-01-30T00:00:00.000Z; bluray=; cinema=; d
+                      igital=; dvd=; russia=}
+slogan              :
+year                : 2021
+poster              : @{url=https://image.openmoviedb.com/kinopoisk-images/
+                      1946459/488acf9a-90e6-443f-a2c9-fb4f86947173/orig; pr
+                      eviewUrl=https://image.openmoviedb.com/kinopoisk-imag
+                      es/1946459/488acf9a-90e6-443f-a2c9-fb4f86947173/x1000
+                      }
+facts               : {}
+genres              : {@{name=триллер}, @{name=драма}, @{name=детектив}}
+countries           : {@{name=Испания}}
+seasonsInfo         : {@{number=1; episodesCount=8}, @{number=2; episodesCo
+                      unt=8}, @{number=3; episodesCount=6}}
+persons             : {@{id=3180904; photo=https://image.openmoviedb.com/ki
+                      nopoisk-st-images//actor_iphone/iphone360_3180904.jpg
+                      ; name=Альберт Саласар; enName=Albert Salazar; descri
+                      ption=Paul Uribe; profession=актеры; enProfession=act
+                      or}, @{id=1699312; photo=https://image.openmoviedb.co
+                      m/kinopoisk-st-images//actor_iphone/iphone360_1699312
+                      .jpg; name=Джоэль Боскед; enName=Joel Bosqued; descri
+                      ption=León; profession=актеры; enProfession=actor}, @
+                      {id=4004406; photo=https://image.openmoviedb.com/kino
+                      poisk-st-images//actor_iphone/iphone360_4004406.jpg;
+                      name=Мина Эль Хаммани; enName=Mina El Hammani; descri
+                      ption=Elvira; profession=актеры; enProfession=actor},
+                       @{id=5473976; photo=https://image.openmoviedb.com/ki
+                      nopoisk-st-images//actor_iphone/iphone360_5473976.jpg
+                      ; name=Клаудия Риера; enName=Claudia Riera; descripti
+                      on=Inés Mendoza; profession=актеры; enProfession=acto
+                      r}...}
+images              : @{framesCount=0}
+lists               : {}
+spokenLanguages     : {}
+productionCompanies : {}
+typeNumber          : 2
+sequelsAndPrequels  : {@{id=455241; name=Черная лагуна; enName=El internado
+                      }
+updatedAt           : 2024-12-08T19:31:44.388Z
+budget              :
+fees                : @{world=; russia=; usa=}
+alternativeName     : El Internado: Las Cumbres
+enName              :
+movieLength         :
+names               : {@{name=Чёрная лагуна: Вершины}, @{name=El Internado:
+                       Las Cumbres}, @{name=寄宿學校疑雲：拉斯坎佈雷斯; language=CN; typ
+                      e=}, @{name=Le Pensionnat : Las Cumbres; language=FR;
+                       type=}...}
+ratingMpaa          :
+shortDescription    :
+technology          : @{hasImax=False; has3D=False}
+ticketsOnSale       : False
+similarMovies       : {@{id=455241; name=Черная лагуна; enName=; alternativ
+                      eName=El internado; type=tv-series; poster=}}
+imagesInfo          : @{framesCount=6}
+ageRating           :
+backdrop            : @{url=; previewUrl=}
+logo                : @{url=https://image.openmoviedb.com/tmdb-images/origi
+                      nal/emx6fVL49yvF6URXCpp4uSYcrnE.png; previewUrl=https
+                      ://image.openmoviedb.com/tmdb-images/w500/emx6fVL49yv
+                      F6URXCpp4uSYcrnE.png}
+watchability        : @{items=System.Object[]}
+releaseYears        : {@{start=2021; end=2023}}
+top10               :
+top250              :
+status              : completed
+isSeries            : True
+seriesLength        :
+totalSeriesLength   :
+deletedAt           :
+networks            :
+videos              : @{trailers=System.Object[]}
+
+
+
+PS C:\Users\Женя\Desktop> Invoke-RestMethod -Uri "https://api.kinopoisk.dev/v1/movie/search?search=Inception" -Headers @{ "X-API-KEY" = "ZNCAXCY-N0FMR5B-N23G774-91NSM0B" }
+Invoke-RestMethod : {"statusCode":500,"message":"Internal server error"}
+строка:1 знак:1
++ Invoke-RestMethod -Uri "https://api.kinopoisk.dev/v1/movie/search?sea ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest
+   :HttpWebRequest) [Invoke-RestMethod], WebException
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.Powe
+   rShell.Commands.InvokeRestMethodCommand
